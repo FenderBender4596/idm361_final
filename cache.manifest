@@ -1,0 +1,46 @@
+CACHE MANIFEST
+# version - 03 - 12_1_17
+
+CACHE:
+
+# CSS
+
+css-normalize.css
+css-add2home.css
+css-main.css
+
+# IMAGES
+
+img/ball.svg
+img/fart_frown.svg
+img/fart_smile.png
+img/fart-icon-57x57.png
+img/fart-icon-72x72.png
+img/fart-icon-76x76.png
+img/fart-icon-114x114.png
+img/fart-icon-144x144.png
+img/fart-icon-152x152.png
+img/fart-icon-180x180.png
+img/fart-icon-256x256.png
+
+# HTML FILES
+
+index.html
+setsounds.html
+
+# JAVASCRIPT - SPECIFIC ORDER
+
+js-refresh-manifest.js
+js-add2home.js
+js-main.js
+
+# AUDIO
+
+snd/fart.mp3
+snd/shart.mp3 
+snd/horn.mp3
+snd/scream.mp3
+snd/help.mp3
+
+## Any resources not listed above will require the user to be online.
+NETWORK:

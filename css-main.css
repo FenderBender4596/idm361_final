@@ -1,0 +1,181 @@
+/*main CSS*/
+@import "compass/css3";
+
+
+* {
+	box-sizing: border-box;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #000;
+}
+
+#content {
+	background-color: #778A98; 
+	width: 320px;
+	height: 568px;
+	margin: 10px auto;
+/*	margin-top: 20%s;*/
+}
+
+#wrapper {
+	background-color: #6D7A83; 
+	width: 300px;
+	height: 548px;
+	margin: 10px auto;	
+
+}
+
+h1 {
+	font-size: 2em;
+    margin: 0.67em 0;
+    text-align: center;
+}
+
+#timer {
+	text-align: center;
+	margin-top: 10%;
+    background-color: #000;
+    padding: 0;
+    color: red;
+	font-size: 2em;
+	animation: OpacityShift 1s ease-out infinite;
+	animation-delay: 500ms;
+
+}
+
+#unarmed {
+	color: red;
+    background-color: black;
+    font-size: 3.5em;
+	padding: 0;
+	
+}
+
+#armed {
+	color: red;
+    background-color: black;
+    font-size: 3.5em;
+	padding: 0;
+}
+
+.hide {
+display: none;
+
+}
+
+.fart_button {
+	z-index: 1;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 4%;
+    margin-top: -75%;
+    position: absolute;
+    width: 65%;
+}
+
+.set_sound {
+	margin: 0 auto;
+    padding: 0;
+    margin-left: 23%;
+    margin-top: 90%;
+    font-size: 1.5em;
+    color: red;
+    background-color: #000;
+    border: black 1px solid;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+a {
+	text-decoration: none;
+    color: red;
+
+}
+
+.soundBttn {
+	background-color: steelblue;
+	color: lightgrey;
+	width: 100%;
+	font-size: 2em;
+	margin: 5% 0 15% 0; 
+	border: none;
+}
+
+.change {
+	background-color: red !important;
+	color: black !important;
+}
+
+.unchange {
+	background-color: steelblue;
+	color: lightgrey;
+}
+
+.goBack {
+	background-color: black;
+	color: red;
+	width: 100%;
+	font-size: 2em;
+	margin: 0; 
+	border: none;
+}
+
+#widescreen {
+  width: 480px;
+  margin: 85px auto;
+  text-align: center;
+  color: red;
+  -webkit-user-select: none;
+  display: none;
+}
+
+#sounds {
+	display: hidden;
+}
+
+.hiddenTimer {
+	display: hidden;
+}
+
+
+@keyframes OpacityShift {
+  0% {
+    color: rgba(255,0,0,0) ;
+  }
+  50% {
+    color: rgba(255,0,0,1) ;
+  }
+  100% {
+    color: rgba(255,0,0,0) ;
+  }
+}
+
+
+@media only screen and (orientation:portrait) {
+		
+  #widescreen {
+    display: none;
+  }
+}
+
+@media only screen and (orientation:landscape) {
+  body {
+    background-color: #000;
+  }
+  #content {
+	display: none;
+  }
+	
+  #wrapper {
+    display: none;
+  }
+  #widescreen {
+    display: block;
+  }
+}
+
+

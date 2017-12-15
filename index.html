@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+
+<head>
+	<title>JAKEAPP</title>
+	<!-- META -->
+	<meta charset="utf-8">
+<!--	changes viewport based on the initial scale of the device, stops pinching, and keeps it at the device width-->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0">
+<!--	documentation found in apple safari and web app guide-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+<!--	gives the device a status bar colored black in the top-->
+
+	<!-- make the app title different than the page title -->
+	<meta name="apple-mobile-web-app-title" content="Fart BUTTon">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<!-- disable auto phone number detection -->
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css-normalize.css">
+	<link rel="stylesheet" href="css-add2home.css">
+	<link rel="stylesheet" href="css-main.css">	
+	<!-- ipad ICONS -->
+	<!-- ipads retina icon -->
+	<link href="img/fart-icon-152x152.png" sizes="152x152" rel="apple-touch-icon">
+	<!-- ipads retina icon (ios < 7) -->
+	<link href="image/fart-icon-144x144.png" sizes="144x144" rel="apple-touch-icon">
+	<!-- ipads non-retina icon -->
+	<link href="image/fart-icon-76x76.png" sizes="76x76" rel="apple-touch-icon">
+	<!-- ipads non-retina icon (ios < 7) -->
+	<link href="image/fart-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
+	
+	<!-- iphone ICONS -->
+	<!-- iphone 6 plus icon -->
+	<link href="image/fart-icon-180x180.png" sizes="180x180" rel="apple-touch-icon">
+	<!-- iphone retina icon (ios < 7) -->
+	<link href="image/fart-icon-114x114.png" sizes="114x114" rel="apple-touch-icon">
+	<!-- iphone non-retina icon (ios < 7) -->
+	<link href="image/fart-icon-57x57.png" sizes="57x57" rel="apple-touch-icon">
+	
+	<!-- HAXX -->
+	<style>
+		html {
+			-webkit-text-size-adjust: 
+		}
+	</style>
+</head>
+
+<body>
+	<!-- PAGE CONTENT -->
+	
+	<div id="content">
+	
+		<div id="wrapper">
+			
+			<p id="timer">1:00</p>
+			
+			<h1 id="unarmed">UNARMED</h1>
+			<h1 id="armed" class="hide">ARMED</h1>
+			
+			<button onclick="startTimer();changeText()"><img class="fart_button" src="img/button.png" alt="button"></button>
+			<button class="set_sound" onclick="jmp2LocalPage('setsounds.html')">SET SOUND</button>
+				
+			<div id="sounds">
+			<audio id="fartSound" src="snd/fart.mp3"></audio>
+			<audio id="shartSound" src="snd/shart.mp3"></audio>
+			<audio id="hornSound" src="snd/horn.mp3"></audio>
+			<audio id="skramSound" src="snd/scream.mp3"></audio>
+			<audio id="helpSound" src="snd/help.mp3"></audio>
+			</div>
+		</div>
+	</div>
+	
+	<div id="widescreen">
+    		<p>to activate YOUR FART BUTTON</p>
+    		<h1>Turn your phone to PORTRAIT MODE</h1>
+  	</div>
+	
+	<!-- JAVASCRIPT-->
+	<script src="js-refresh-manifest.js" type="text/javascript"></script>
+	<script type="application/javascript">
+	  //customize config variable before loading add2home.js
+	  var addToHomeConfig = {
+		  touchIcon: true
+	  }
+
+    </script>
+    <script src="js-add2home.js"></script>
+	<script src="js-main.js"></script>
+</body>
+
+</html>
